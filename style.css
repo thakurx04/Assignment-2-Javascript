@@ -1,0 +1,109 @@
+/* Reset */
+body, h1, p, label, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top left, #ff9a9e, #fad0c4, #fad390);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 480px;
+    background: #ffffffee;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+    backdrop-filter: blur(6px);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #ff5e62;
+    margin-bottom: 15px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs and selects */
+select, button {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 2px solid #eee;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+select:focus {
+    border-color: #ff5e62;
+    outline: none;
+}
+
+/* Checkbox group */
+.checkbox-group {
+    margin: 10px 0;
+}
+.checkbox-group label {
+    display: inline-block;
+    background: #ffeaa7;
+    padding: 6px 12px;
+    border-radius: 12px;
+    margin: 5px 8px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.checkbox-group input {
+    display: none;
+}
+.checkbox-group input:checked + label {
+    background: #fab1a0;
+    color: #fff;
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg, #ff5e62, #ff9966);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(255,94,98,0.3);
+    transition: transform 0.2s;
+}
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Order summary */
+#orderSummary {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #fdf0f0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    box-shadow: inset 0px 2px 6px rgba(0,0,0,0.05);
+}
