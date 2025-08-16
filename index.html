@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smoothie Machine</h1>
+        <form id="smoothieForm">
+            <!-- Smoothie Size -->
+            <label for="size">Choose Size:</label>
+            <select id="size" name="size" required>
+                <option value="small">Small ($3)</option>
+                <option value="medium">Medium ($5)</option>
+                <option value="large">Large ($7)</option>
+            </select>
+
+            <!-- Base Liquid -->
+            <label for="base">Choose Base Liquid :</label>
+            <select id="base" name="base" required>
+                <option value="milk">Milk</option>
+                <option value="almond milk">Almond Milk</option>
+                <option value="soy milk">Soy Milk</option>
+                <option value="water">Water</option>
+            </select>
+
+            <!-- Fruits -->
+            <label>Choose Fruits:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="fruit" value="banana"> Orange</label>
+                <label><input type="checkbox" name="fruit" value="strawberry"> Strawberry</label>
+                <label><input type="checkbox" name="fruit" value="mango"> Banana</label>
+                <label><input type="checkbox" name="fruit" value="blueberry"> Blueberry & Raspberry</label>
+            </div>
+
+            <!-- Extras -->
+            <label>Extras ($1 each):</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="extra" value="protein powder">dry fruits</label>
+                <label><input type="checkbox" name="extra" value="chia seeds"> Chia Seeds and Avacado</label>
+                <label><input type="checkbox" name="extra" value="honey"> Honey</label>
+            </div>
+
+            <button type="submit">Your Smoothie Order</button>
+        </form>
+
+        <!-- Output Section -->
+        <div id="orderSummary"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
